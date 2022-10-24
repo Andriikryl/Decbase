@@ -1,0 +1,47 @@
+.succes{
+    padding-block-end: 170px;
+    .succes__box{
+        display: flex;
+        gap: 154px;
+        flex-wrap: wrap;
+        .succes__info{
+            padding-block-start: 100px;
+
+            .succes__num{
+                position: relative;
+                .succes__num-bg{
+                    background-image: url(../images/succes/bg-num.jpg);
+                    width: 300px;
+                    height: 226px;
+                }
+                .succes__inner-number{
+                    position: absolute;
+                    background-color: white;
+                    top: 0;
+                    mix-blend-mode: color-burn;
+                    p{
+                        font-family: 'Open Sans';
+                        font-style: normal;
+                        font-weight: 700;
+                        font-size: 288px;
+                        line-height: 257px;
+                        letter-spacing: -0.01em;
+                        color: white;
+                        text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+                    }
+                }
+            }
+
+            .succes__info-titel{
+                font-family: 'Poppins';
+                font-style: normal;
+                font-weight: 500;
+                font-size: 50px;
+                line-height: 65px;
+                letter-spacing: 0.04em;
+                color: #212121;
+                padding-block-end: 17px;
+            }
+        }
+    }
+}

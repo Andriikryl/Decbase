@@ -1,0 +1,106 @@
+.client{
+    padding-block: 183px;
+    .client__box-titel{
+        font-family: 'Poppins';
+        font-style: normal;
+        font-weight: 500;
+        font-size: 20px;
+        line-height: 30px;
+        color: #646464;   
+        padding-block-end: 15px;   
+        text-align: center;  
+    }
+    .client__box-text{
+        font-family: 'Poppins';
+        font-style: normal;
+        font-weight: 500;
+        font-size: 48px;
+        color: #212121;        
+        text-align: center;
+        padding-block-end: 100px;
+    }
+    .client__name{
+        font-family: 'Open Sans';
+        font-style: normal;
+        font-weight: 400;
+        font-size: 16px;
+        line-height: 22px;
+        color: #646464;
+
+        padding-block-end: 8px;
+        &::after{
+            content: "";
+            background-image: url(../images/clients/”.svg);
+            background-size: cover;
+            background-repeat: no-repeat;
+            display:inline-block;
+            width: 42px;
+            height: 38px;
+            margin-inline-start: 65px;
+        }
+        span{
+            font-family: 'Open Sans';
+            font-style: normal;
+            font-weight: 700;
+            font-size: 24px;
+            line-height: 33px;
+            color: #212121;
+        }
+    }
+    .client__info{
+        font-family: 'Open Sans';
+        font-style: normal;
+        font-weight: 400;
+        font-size: 18px;
+        line-height: 28px;
+        color: #646464;
+    }
+}
+
+  .gallery {
+    padding: 60px;
+    display: grid;
+    grid-template-columns: inherit;
+    overflow-x: scroll;
+    overscroll-behavior-x: contain;
+    scroll-snap-type: x proximity;
+    scrollbar-width: none;
+  }
+  
+  .gallery::-webkit-scrollbar {
+    inline-size: 0 !important;
+    display: none;
+  }
+  
+  .gallery .wrapper {
+    grid-column: content;
+    display: flex;
+    align-items: center;
+    gap: 84px;
+  }
+  
+  .gallery .item {
+    flex-shrink: 0;
+    display: flex;
+    flex-direction: column;
+    padding: 41px 40px 60px 100px;
+    scroll-snap-align: center;
+    background: #FFFFFF;
+    box-shadow: 7px 7px 30px 5px rgba(66, 96, 84, 0.15);
+    border-radius: 70px 0px;
+    position: relative;
+    &::before{
+        content: "";
+        background-image: url(../images/clients/faceone.png);
+        background-size: cover;
+        background-repeat: no-repeat;
+        display:inline-block;
+        width: 131px;
+        height: 130px;
+        position: absolute;
+        left: -60px;
+        top: 56px;
+    }
+  }
+  
+  

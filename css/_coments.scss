@@ -1,0 +1,110 @@
+.coments{
+    padding-block: 87px 169px;
+    background-color: #F8F8F8;
+
+    .coments__titel{
+        font-family: 'Poppins';
+        font-style: normal;
+        font-weight: 500;
+        font-size: 48px;
+        line-height: 60px;
+        text-align: center;
+        color: #212121;
+        padding-block-end: 90px;
+    }
+    .coments__content{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        @media (min-width: 700px){
+            align-items: center;
+            flex-direction: row;
+        }
+
+        &::before{
+            content: "";
+            background-image: url(../images/coments/Vector\ 3.svg);
+            background-repeat: no-repeat;
+            background-size: cover;
+            width: 218px;
+            height: 98px;
+            display: block;
+            position: relative;
+            top: 50px;
+            @media (max-width: 700px){
+                transform: rotate(90deg);
+                height: 97px;
+                width: 195px;
+            }
+            @media (max-width: 700px) {
+
+            }
+        }
+        .coments__content-info{
+            font-family: 'Open Sans';
+            font-style: normal;
+            font-weight: 700;
+            font-size: 50px;
+            line-height: 60px;
+            text-align: center;
+            color: #212121;
+            padding-block-end: 20px;
+        }
+
+        .coments__content-name{
+            font-family: 'Montserrat';
+            font-style: normal;
+            font-weight: 400;
+            font-size: 14px;
+            line-height: 20px;
+            text-align: center;
+            text-transform: uppercase;
+            color: #ABABAB;
+        
+        }
+
+        .section__item{
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            background: #FFFFFF;
+            box-shadow: 0px 13px 16px rgba(0, 0, 0, 0.1);
+            border-radius: 40px 0px;
+            padding: 47px 50px 47px 50px;
+        }
+        .section__item--start {
+            order: -1;
+        }
+    }
+}
+
+
+.coments__style{
+    position: relative;
+    top: 91px;
+}
+
+.coments__content:is(.main){
+    &::before{
+        content: "";
+        background-image: url(../images/coments/main.svg);
+        background-repeat: no-repeat;
+        background-size: cover;
+        width: 218px;
+        height: 98px;
+        display: block;
+        @media (max-width: 700px){
+            transform: rotate(90deg);
+            height: 97px;
+            width: 175px;
+            position: relative;
+            top: -45px;
+        }
+    }
+}
+
+.coments-pd-end{
+    @media (max-width: 700px){
+        padding-bottom: 179px;
+    }
+}
