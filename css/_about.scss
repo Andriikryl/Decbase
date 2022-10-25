@@ -2,6 +2,7 @@
     padding-block-end: 200px;
     .about__box{
         display: flex;
+        justify-content: center;
         flex-wrap: wrap;
         gap: 132px;
         .about__info{
@@ -36,7 +37,7 @@
         }
         .about__img{
             position: relative;
-            max-width: 681px;
+            max-width: 641px;
             &::before{
                 content: "";
                 display: block;
